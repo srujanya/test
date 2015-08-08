@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Car App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+ body { background: #c7dcdf; }
+  
+  .navbar {
+   background-color: red;
+   background: #6082b6;
+   border-color: red;
+}
+.navbar-fixed-top .navbar-brand {
+    color: #990033;
+}
+.navbar-fixed-top .navbar-nav>li>a {
+    color: #990033;
+    background-color: #91a3b0;
+}
+.navbar-fixed-top .navbar-nav>li>a:hover,
+.navbar-fixed-top .navbar-nav>li>a:focus {
+    color: #a9144c;
+    background-color: #00ccff;
+}
+form{
+margin-top:6em;
+}
+
+
+  </style>
+</head>
+<body data-spy="scroll">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menuBBar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+<span class="icon-bar"></span>		  
+      </button>
+     <a class="navbar-brand" href="/" color:red;> <b>MY</b>Car</a>
+	<a class="navbar-brand" rel="home" href="#" title="Buy Sell Rent Everyting">
+        <img style="max-width:90px; margin-top: -11px;"
+             src="ford.jpg">
+    </a>
+    </div>
+    
+    <div>
+      <div class="collapse navbar-collapse" id="menuBBar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section1">Buy A New Car</a></li>
+          <li><a href="#section2">Buy An Used Car</a></li>
+          <li><a href="#section3">Sell Car</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Write Feedback</a></li>
+              <li><a href="#section42">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div class="container">
+ 
+  <form class="form-horizontal" role="form" action="http://127.0.0.1:8081/joinMe" method="post">
+  
+    <div class="form-group">
+          <label class="col-lg-3 control-label">First Name:</label>
+          <div class="col-lg-9">
+            <input class="form-control"  type="text" name="fname" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Last Name:</label>
+          <div class="col-lg-9">
+            <input class="form-control" type="text" name="lname">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Email:</label>
+          <div class="col-lg-9">
+            <input class="form-control"  type="email" name="email" required>
+          </div>
+        </div>
+		
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Password:</label>
+          <div class="col-lg-9">
+            <input class="form-control"  type="password" name="password" required>
+          </div>
+        </div>
+		<div class="form-group">
+          <label class="col-lg-3 control-label"></label>
+          <div class="col-lg-9">
+            <button type="submit" class="btn btn-default">Join Me</button>
+          </div>
+        </div>
+    
+  </form>
+</div>
+<div class="bouncy-container red">
+        <div class="display bouncy red ">
+          <div class="inner">
+            <marquee behavior="alternate">
+		  	<img src="Volkswagen-Lavida.jpg" class="img-circle" alt="Cinque Terre" width="150" height="80"/>
+			<img src="audi.jpg" class="img-circle" alt="Cinque Terre" width="150" height="80"/>
+			</marquee>
+          </div>
+        </div>
+      </div>
+	  <div class="container">
+      <div class="col-sm-10">          
+		<h1><font color="green">Even more savings for you</font></h1>
+		<p><font color="blue"><b>MY</b>Car has teamed up with car makers to deliver exclusive cash savings only available through MYCar and our partners, including AAA, American Express, Consumer Reports, GEICO, and many more.</font></p>
+	   </div>
+	  </div>
+</body>
+</html>
